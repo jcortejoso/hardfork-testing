@@ -1,0 +1,318 @@
+{
+  "chainId": 9099000,
+  "istanbul": {
+   "epoch": 50,
+   "policy": 2,
+   "lookbackwindow": 6,
+   "blockperiod": 2,
+   "requesttimeout": 3000
+  },
+  "hardforks": {
+   "churritoBlock": 60,
+   "donutBlock": 60
+  },
+  "genesisTimestamp": 1615323107,
+  "SortedOracles": {
+   "reportExpirySeconds": 300
+  },
+  "GasPriceMinimum": {
+   "minimumFloor": "100000000",
+   "targetDensity": "0.5",
+   "adjustmentSpeed": "0.5"
+  },
+  "Reserve": {
+   "tobinTaxStalenessThreshold": 3153600000,
+   "dailySpendingRatio": "0.05",
+   "assetAllocations": [
+    {
+     "symbol": "cGLD",
+     "weight": "0.5"
+    },
+    {
+     "symbol": "BTC",
+     "weight": "0.3"
+    },
+    {
+     "symbol": "ETH",
+     "weight": "0.15"
+    },
+    {
+     "symbol": "DAI",
+     "weight": "0.05"
+    }
+   ],
+   "tobinTax": "0",
+   "tobinTaxReserveRatio": "0",
+   "spenders": null,
+   "otherAddresses": null,
+   "initialBalance": null,
+   "frozenAssetsStartBalance": null,
+   "frozenAssetsDays": 0
+  },
+  "StableToken": {
+   "name": "Celo Dollar",
+   "symbol": "cUSD",
+   "decimals": 18,
+   "rate": "1",
+   "inflationFactorUpdatePeriod": 63072000,
+   "initialBalances": [
+    {
+     "account": "0xfb2b958e4fbc1d6e0317e754a048ed5b421fa38a",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x40d90f940d56556f687b095c017a249c945ae600",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0xaa4bacae913a47768e0e67bd41c698acc1575f97",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x921dc73abe9b50beffcd7f60c0e6511394514770",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x26a1ef02c0c59a9bdab1047b0aeb7f77f363da2c",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x12726bd52062309aa8498b54c46629d0402c42e3",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x56ed0c7ef7c3d2d1c627c1a0c303e776f83d5cb8",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x65e3fb10f3063c90daaa0ba2d078821d81977d9f",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0xa3e6b375448c33c684eae4cc4da0b802c8f522a4",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x6722ed53242a364238437b4ecb4da1b681f8afeb",
+     "amount": "50000000000000000000000"
+    }
+   ],
+   "frozen": false,
+   "oracles": null,
+   "goldPrice": "1",
+   "exchangeIdentifier": "Exchange"
+  },
+  "StableTokenEUR": {
+   "name": "Celo Euro",
+   "symbol": "cEUR",
+   "decimals": 18,
+   "rate": "1",
+   "inflationFactorUpdatePeriod": 63072000,
+   "initialBalances": [
+    {
+     "account": "0xfb2b958e4fbc1d6e0317e754a048ed5b421fa38a",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x40d90f940d56556f687b095c017a249c945ae600",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0xaa4bacae913a47768e0e67bd41c698acc1575f97",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x921dc73abe9b50beffcd7f60c0e6511394514770",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x26a1ef02c0c59a9bdab1047b0aeb7f77f363da2c",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x12726bd52062309aa8498b54c46629d0402c42e3",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x56ed0c7ef7c3d2d1c627c1a0c303e776f83d5cb8",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x65e3fb10f3063c90daaa0ba2d078821d81977d9f",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0xa3e6b375448c33c684eae4cc4da0b802c8f522a4",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x6722ed53242a364238437b4ecb4da1b681f8afeb",
+     "amount": "50000000000000000000000"
+    }
+   ],
+   "frozen": false,
+   "oracles": null,
+   "goldPrice": "1",
+   "exchangeIdentifier": "ExchangeEUR"
+  },
+  "Exchange": {
+   "frozen": false,
+   "spread": "0.005",
+   "reserveFraction": "0.01",
+   "updateFrequency": 300,
+   "minimumReports": 1
+  },
+  "ExchangeEUR": {
+   "frozen": false,
+   "spread": "0.005",
+   "reserveFraction": "0.01",
+   "updateFrequency": 300,
+   "minimumReports": 1
+  },
+  "LockedGold": {
+   "unlockingPeriod": 259200
+  },
+  "GoldToken": {
+   "frozen": false,
+   "initialBalances": [
+    {
+     "account": "0xfb2b958e4fbc1d6e0317e754a048ed5b421fa38a",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x40d90f940d56556f687b095c017a249c945ae600",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0xaa4bacae913a47768e0e67bd41c698acc1575f97",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x921dc73abe9b50beffcd7f60c0e6511394514770",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x26a1ef02c0c59a9bdab1047b0aeb7f77f363da2c",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x12726bd52062309aa8498b54c46629d0402c42e3",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x56ed0c7ef7c3d2d1c627c1a0c303e776f83d5cb8",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x65e3fb10f3063c90daaa0ba2d078821d81977d9f",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0xa3e6b375448c33c684eae4cc4da0b802c8f522a4",
+     "amount": "50000000000000000000000"
+    },
+    {
+     "account": "0x6722ed53242a364238437b4ecb4da1b681f8afeb",
+     "amount": "50000000000000000000000"
+    }
+   ]
+  },
+  "Validators": {
+   "groupLockedGoldRequirements": {
+    "value": "10000000000000000000000",
+    "duration": 15552000
+   },
+   "validatorLockedGoldRequirements": {
+    "value": "10000000000000000000000",
+    "duration": 5184000
+   },
+   "validatorScoreExponent": 10,
+   "validatorScoreAdjustmentSpeed": "0.1",
+   "membershipHistoryLength": 60,
+   "slashingPenaltyResetPeriod": 2592000,
+   "maxGroupSize": 5,
+   "commissionUpdateDelay": 51840,
+   "downtimeGracePeriod": 0,
+   "commission": "0.1"
+  },
+  "Election": {
+   "minElectableValidators": 1,
+   "maxElectableValidators": 100,
+   "maxVotesPerAccount": "10",
+   "electabilityThreshold": "0.001"
+  },
+  "EpochRewards": {
+   "targetVotingYieldInitial": "0",
+   "targetVotingYieldMax": "0.0005",
+   "targetVotingYieldAdjustmentFactor": "0",
+   "rewardsMultiplierMax": "2",
+   "rewardsMultiplierAdjustmentFactorsUnderspend": "0.5",
+   "rewardsMultiplierAdjustmentFactorsOverspend": "5",
+   "targetVotingGoldFraction": "0.5",
+   "maxValidatorEpochPayment": "205479452054794520547",
+   "communityRewardFraction": "0.25",
+   "carbonOffsettingPartner": "0x0000000000000000000000000000000000000000",
+   "carbonOffsettingFraction": "0.001",
+   "frozen": false
+  },
+  "Blockchain": {
+   "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+   },
+   "gasForNonGoldCurrencies": 50000,
+   "blockGasLimit": 13000000,
+   "uptimeLookbackWindow": 10
+  },
+  "Random": {
+   "randomnessBlockRetentionWindow": 720
+  },
+  "Attestations": {
+   "attestationExpiryBlocks": 720,
+   "selectIssuersWaitBlocks": 4,
+   "maxAttestations": 100,
+   "AttestationRequestFeeInDollars": "0.05"
+  },
+  "TransferWhitelist": {
+   "addresses": null,
+   "registryIds": null
+  },
+  "ReserveSpenderMultiSig": {
+   "signatories": [
+    "0x3d0549df707100b1e860b11f5746de02e17137c5"
+   ],
+   "numRequiredConfirmations": 1,
+   "numInternalRequiredConfirmations": 1
+  },
+  "GovernanceApproverMultiSig": {
+   "signatories": [
+    "0x3d0549df707100b1e860b11f5746de02e17137c5"
+   ],
+   "numRequiredConfirmations": 1,
+   "numInternalRequiredConfirmations": 1
+  },
+  "DoubleSigningSlasher": {
+   "penalty": "9000000000000000000000",
+   "reward": "1000000000000000000000"
+  },
+  "DowntimeSlasher": {
+   "penalty": "100000000000000000000",
+   "reward": "10000000000000000000",
+   "slashableDowntime": 60
+  },
+  "Governance": {
+   "useMultiSig": true,
+   "concurrentProposals": 3,
+   "MinDeposit": "100000000000000000000",
+   "QueueExpiry": 2419200,
+   "DequeueFrequency": 1800,
+   "ApprovalStageDuration": 1800,
+   "ReferendumStageDuration": 3600,
+   "ExecutionStageDuration": 86400,
+   "participationBaseline": "0.005",
+   "participationFloor": "0.01",
+   "BaselineUpdateFactor": "0.2",
+   "BaselineQuorumFactor": "1"
+  }
+ }
