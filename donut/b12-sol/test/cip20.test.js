@@ -3,6 +3,8 @@ const { ethers } = require("ethers");
 
 const vectors = require("./cip20.json");
 
+require("../setup")
+
 describe("CIP20", async () => {
   let cip20;
 

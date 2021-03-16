@@ -1,6 +1,8 @@
 const { assert } = require("chai");
 const { tonelli } = require("./tonelli")
 
+require("../setup")
+
 function split(n) {
   let str = n.toString(16).padStart(128, '0')
   return ["0x"+str.substr(-128, 64), "0x"+str.substr(-64)]
@@ -89,7 +91,7 @@ async function infoToData(instance, info) {
 describe("SnarkEpochDataSlasher", function () {
   let instance;
   this.timeout(60000);
-  
+
   before(async () => {
     const Passthrough = await ethers.getContractFactory("TestSlasher");
     instance = await Passthrough.deploy();

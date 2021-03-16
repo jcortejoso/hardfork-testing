@@ -7,6 +7,8 @@ const g2Add = require("./12377/bls12377G2Add_matter.json");
 const g2Mul = require("./12377/bls12377G2Mul_matter.json");
 const g2MultiExp = require("./12377/bls12377G2MultiExp_matter.json");
 
+require("../setup")
+
 function split(n) {
   let str = n.toString(16).padStart(128, "0");
   return ["0x" + str.substr(-128, 64), "0x" + str.substr(-64)];
