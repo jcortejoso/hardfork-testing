@@ -945,13 +945,13 @@ library CeloB12_377Lib {
     using B12 for B12.G2Point;
 
 
-    uint8 constant G1_ADD = 0xf2;
-    uint8 constant G1_MUL = 0xf1;
-    uint8 constant G1_MULTI_EXP = 0xf0;
-    uint8 constant G2_ADD = 0xef;
-    uint8 constant G2_MUL = 0xee;
-    uint8 constant G2_MULTI_EXP = 0xed;
-    uint8 constant PAIRING = 0xec;
+    uint8 constant G1_ADD = 0xE9;
+    uint8 constant G1_MUL = 0xE8;
+    uint8 constant G1_MULTI_EXP = 0xE7;
+    uint8 constant G2_ADD = 0xE6;
+    uint8 constant G2_MUL = 0xE5;
+    uint8 constant G2_MULTI_EXP = 0xE4;
+    uint8 constant PAIRING = 0xE3;
 
 
     function g1Add(B12.G1Point memory a, B12.G1Point memory b)
