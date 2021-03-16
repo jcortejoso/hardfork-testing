@@ -1,5 +1,4 @@
 const { assert } = require("chai");
-const { ethers } = require("ethers");
 
 const vectors = require("./cip20.json");
 
