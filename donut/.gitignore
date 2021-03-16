@@ -1,3 +1,7 @@
 localenv/validator*
 localenv/genesis.json
 bin
+
+b12-sol/cache
+b12-sol/artifacts
+b12-sol/node_modules
