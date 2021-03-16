@@ -17,6 +17,7 @@ localenv: geth
 
 geth:
 	@echo "Building celo-blockchain"
+	mkdir -p $(BIN)
 	cd $(CELO_BLOCKCHAIN) && make all
 	cp $(CELO_BLOCKCHAIN)/build/bin/geth $(BIN)
 	cp $(CELO_BLOCKCHAIN)/build/bin/mycelo $(BIN)
@@ -27,7 +28,7 @@ contracts:
 
 
 cip28:
-	go build -o $(BIN)/cip28 ./cip-28	
+	go build -o $(BIN)/cip28 ./cip-28
 
 cip21:
 	go build -o $(BIN)/cip21 ./cip-21
