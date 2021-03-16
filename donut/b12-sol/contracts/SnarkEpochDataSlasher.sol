@@ -65,7 +65,7 @@ contract SnarkEpochDataSlasher {
         require(isValid(epoch, data2, bitmap2, sig2, hint2));
     }
 
-    address constant VALIDATOR_BLS = address(0xff - 20);
+    address constant VALIDATOR_BLS = address(0xff - 30);
     function validatorBLSPublicKeyFromSet(uint256 index, uint256 blockNumber) public view returns (bytes memory) {
         bytes memory out;
         bool success;
