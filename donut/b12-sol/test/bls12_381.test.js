@@ -220,6 +220,6 @@ describe("BLS12-381", function () {
   });
 
   it.skip("should serializeG2", async () => {
-    console.log(await instance.testSerializeG2(1, 2, 3, 4));
+    console.log(await instance.testSerializeG2(1, 2, 3, 4, 5, 6, 7, 8));
   });
 });
