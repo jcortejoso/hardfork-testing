@@ -11,7 +11,7 @@
    "churritoBlock": 60,
    "donutBlock": 60
   },
-  "genesisTimestamp": 1615323107,
+  "genesisTimestamp": 1615925712,
   "SortedOracles": {
    "reportExpirySeconds": 300
   },
@@ -57,43 +57,43 @@
    "inflationFactorUpdatePeriod": 63072000,
    "initialBalances": [
     {
-     "account": "0xfb2b958e4fbc1d6e0317e754a048ed5b421fa38a",
+     "account": "0xbe406318fe69eee693e0ec2ad8e2a63d970ed3d1",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x40d90f940d56556f687b095c017a249c945ae600",
+     "account": "0x0bf30739f00437bbc396bd9816a54f1667890240",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0xaa4bacae913a47768e0e67bd41c698acc1575f97",
+     "account": "0x28184e7d8a6ec241cec910ae42e8b65cb224092b",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x921dc73abe9b50beffcd7f60c0e6511394514770",
+     "account": "0x64670897466272d5360e8691e3188d98583c9b4a",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x26a1ef02c0c59a9bdab1047b0aeb7f77f363da2c",
+     "account": "0x6df0a025caa84d99c6ac5d3d25624ed70c66ff41",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x12726bd52062309aa8498b54c46629d0402c42e3",
+     "account": "0xcbde348dd46c30d6a8cac5ab2fbea214490a7119",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x56ed0c7ef7c3d2d1c627c1a0c303e776f83d5cb8",
+     "account": "0x011734a56c4e69c2e0f8cc4f971d612d02457729",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x65e3fb10f3063c90daaa0ba2d078821d81977d9f",
+     "account": "0xd7a824d0b8f0c84855250af77c35acace2043ba3",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0xa3e6b375448c33c684eae4cc4da0b802c8f522a4",
+     "account": "0xd61850d7e573010b8311f04e8e3c9734e0620b1d",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x6722ed53242a364238437b4ecb4da1b681f8afeb",
+     "account": "0x58e17c3c60d95472ffd011c082e2c00ea259d383",
      "amount": "50000000000000000000000"
     }
    ],
@@ -110,43 +110,43 @@
    "inflationFactorUpdatePeriod": 63072000,
    "initialBalances": [
     {
-     "account": "0xfb2b958e4fbc1d6e0317e754a048ed5b421fa38a",
+     "account": "0xbe406318fe69eee693e0ec2ad8e2a63d970ed3d1",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x40d90f940d56556f687b095c017a249c945ae600",
+     "account": "0x0bf30739f00437bbc396bd9816a54f1667890240",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0xaa4bacae913a47768e0e67bd41c698acc1575f97",
+     "account": "0x28184e7d8a6ec241cec910ae42e8b65cb224092b",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x921dc73abe9b50beffcd7f60c0e6511394514770",
+     "account": "0x64670897466272d5360e8691e3188d98583c9b4a",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x26a1ef02c0c59a9bdab1047b0aeb7f77f363da2c",
+     "account": "0x6df0a025caa84d99c6ac5d3d25624ed70c66ff41",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x12726bd52062309aa8498b54c46629d0402c42e3",
+     "account": "0xcbde348dd46c30d6a8cac5ab2fbea214490a7119",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x56ed0c7ef7c3d2d1c627c1a0c303e776f83d5cb8",
+     "account": "0x011734a56c4e69c2e0f8cc4f971d612d02457729",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x65e3fb10f3063c90daaa0ba2d078821d81977d9f",
+     "account": "0xd7a824d0b8f0c84855250af77c35acace2043ba3",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0xa3e6b375448c33c684eae4cc4da0b802c8f522a4",
+     "account": "0xd61850d7e573010b8311f04e8e3c9734e0620b1d",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x6722ed53242a364238437b4ecb4da1b681f8afeb",
+     "account": "0x58e17c3c60d95472ffd011c082e2c00ea259d383",
      "amount": "50000000000000000000000"
     }
    ],
@@ -176,43 +176,43 @@
    "frozen": false,
    "initialBalances": [
     {
-     "account": "0xfb2b958e4fbc1d6e0317e754a048ed5b421fa38a",
+     "account": "0xbe406318fe69eee693e0ec2ad8e2a63d970ed3d1",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x40d90f940d56556f687b095c017a249c945ae600",
+     "account": "0x0bf30739f00437bbc396bd9816a54f1667890240",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0xaa4bacae913a47768e0e67bd41c698acc1575f97",
+     "account": "0x28184e7d8a6ec241cec910ae42e8b65cb224092b",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x921dc73abe9b50beffcd7f60c0e6511394514770",
+     "account": "0x64670897466272d5360e8691e3188d98583c9b4a",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x26a1ef02c0c59a9bdab1047b0aeb7f77f363da2c",
+     "account": "0x6df0a025caa84d99c6ac5d3d25624ed70c66ff41",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x12726bd52062309aa8498b54c46629d0402c42e3",
+     "account": "0xcbde348dd46c30d6a8cac5ab2fbea214490a7119",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x56ed0c7ef7c3d2d1c627c1a0c303e776f83d5cb8",
+     "account": "0x011734a56c4e69c2e0f8cc4f971d612d02457729",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x65e3fb10f3063c90daaa0ba2d078821d81977d9f",
+     "account": "0xd7a824d0b8f0c84855250af77c35acace2043ba3",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0xa3e6b375448c33c684eae4cc4da0b802c8f522a4",
+     "account": "0xd61850d7e573010b8311f04e8e3c9734e0620b1d",
      "amount": "50000000000000000000000"
     },
     {
-     "account": "0x6722ed53242a364238437b4ecb4da1b681f8afeb",
+     "account": "0x58e17c3c60d95472ffd011c082e2c00ea259d383",
      "amount": "50000000000000000000000"
     }
    ]
@@ -263,7 +263,7 @@
    },
    "gasForNonGoldCurrencies": 50000,
    "blockGasLimit": 13000000,
-   "uptimeLookbackWindow": 10
+   "uptimeLookbackWindow": 3
   },
   "Random": {
    "randomnessBlockRetentionWindow": 720
@@ -280,14 +280,14 @@
   },
   "ReserveSpenderMultiSig": {
    "signatories": [
-    "0x3d0549df707100b1e860b11f5746de02e17137c5"
+    "0x10bbb20facd6b66d337e7c6880cbd82a0707b1d1"
    ],
    "numRequiredConfirmations": 1,
    "numInternalRequiredConfirmations": 1
   },
   "GovernanceApproverMultiSig": {
    "signatories": [
-    "0x3d0549df707100b1e860b11f5746de02e17137c5"
+    "0x10bbb20facd6b66d337e7c6880cbd82a0707b1d1"
    ],
    "numRequiredConfirmations": 1,
    "numInternalRequiredConfirmations": 1
