@@ -1,9 +1,34 @@
+# Donut Testing
 
+This folder contains test script to verify all DONUT CIPs
 
-## Local Environment
+Testing should work on any tesnet. In particular, testing should be done:
 
-  1. Fetch celo-blockchain & build `make all`
-  2. Copy `geth` and `mycelo`
+ * On mycelo local testnet
+ * On a pre-harfork k8s testnet
+ * On baklava
+
+## Mycelo Local Testing
+
+Requirements:
+* Make sure you have `celo-blockchain` & `celo-monorepo` projects downloaded and updated.
+* Make sure `celo-monorepo` protocol contracts are compiled (run `yarn truffle compile` inside `packages/protocol`)
+
+First, define environment variables `CELO_MONOREPO` and `CELO_BLOCKCHAIN`
+
+```bash
+export CELO_MONOREPO=/path/to/celo-monorepo
+export CELO_BLOCKCHAIN=/path/to/celo-blockchain
+```
+
+Then run:
+
+```bash
+make all
+```
+
+This will put `geth` and `mycelo` binaries on `./bin/`. And also generates a `genesis.json` on `./localenv`
+
 
 ### Config
 
