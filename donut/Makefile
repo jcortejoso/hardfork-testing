@@ -8,6 +8,7 @@ BUILDPATH = $(CELO_MONOREPO)/packages/protocol/build/contracts
 
 LOCALENV = ./localenv
 BIN = ./bin
+B12SOL = ./b12-sol
 mycelo = $(BIN)/mycelo
 
 
@@ -26,6 +27,10 @@ contracts:
 	@echo "Compiling Contracts"
 	cd $(CELO_MONOREPO)/packages/protocol && yarn truffle compile
 
+precompiles:
+	@echo "Installing dependencies for b12-sol (precompile tests)"
+	cd $(B12SOL)
+	npm install
 
 cip28:
 	go build -o $(BIN)/cip28 ./cip-28
@@ -33,4 +38,4 @@ cip28:
 cip21:
 	go build -o $(BIN)/cip21 ./cip-21
 
-all: localenv cip28 cip21
+all: localenv cip28 cip21 precompiles
