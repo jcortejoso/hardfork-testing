@@ -95,7 +95,19 @@
     {
      "account": "0x58e17c3c60d95472ffd011c082e2c00ea259d383",
      "amount": "50000000000000000000000"
-    }
+    },
+    {
+      "account": "0xd07Da2FB725a0B1Cd4b7D06058C587CfCcb1858b",
+      "amount": "50000000000000000000000"
+     },
+     {
+      "account": "0xd927E9e733a46f46e18528148D8b98E496545f66",
+      "amount": "50000000000000000000000"
+     },
+     {
+      "account": "0x59c4AD250334C3C3Ef0F2D54f06f46CAe31Eb9F2",
+      "amount": "50000000000000000000000"
+     }
    ],
    "frozen": false,
    "oracles": null,
@@ -148,7 +160,19 @@
     {
      "account": "0x58e17c3c60d95472ffd011c082e2c00ea259d383",
      "amount": "50000000000000000000000"
-    }
+    },
+    {
+      "account": "0xd07Da2FB725a0B1Cd4b7D06058C587CfCcb1858b",
+      "amount": "50000000000000000000000"
+     },
+     {
+      "account": "0xd927E9e733a46f46e18528148D8b98E496545f66",
+      "amount": "50000000000000000000000"
+     },
+     {
+      "account": "0x59c4AD250334C3C3Ef0F2D54f06f46CAe31Eb9F2",
+      "amount": "50000000000000000000000"
+     }
    ],
    "frozen": false,
    "oracles": null,
@@ -214,7 +238,19 @@
     {
      "account": "0x58e17c3c60d95472ffd011c082e2c00ea259d383",
      "amount": "50000000000000000000000"
-    }
+    },
+    {
+      "account": "0xd07Da2FB725a0B1Cd4b7D06058C587CfCcb1858b",
+      "amount": "50000000000000000000000"
+     },
+     {
+      "account": "0xd927E9e733a46f46e18528148D8b98E496545f66",
+      "amount": "50000000000000000000000"
+     },
+     {
+      "account": "0x59c4AD250334C3C3Ef0F2D54f06f46CAe31Eb9F2",
+      "amount": "50000000000000000000000"
+     }
    ]
   },
   "Validators": {
