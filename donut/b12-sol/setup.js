@@ -8,9 +8,6 @@ const devAccounts = JSON.parse(fs.readFileSync("../localenv/dev-accounts.json"))
 const url = process.env.RPC_URL || "http://localhost:8545"
 const address = process.env.FUNDED_ADDRESS || "0xd927E9e733a46f46e18528148D8b98E496545f66" // validator 0
 const kit = Kit.newKit(url)
-let gethAddress
-
-module.exports = {url, privateKey, address}
 
 before(async () => {
   await sleep(2000)
