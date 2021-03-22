@@ -124,12 +124,12 @@ func testCIPAfterActivation(ctx context.Context, cc *client.CeloClient, blocks b
 
 		if author == validator {
 			if author == header.Coinbase {
-				log.Error("CIP Error: block signer == block coinbase before activation block")
-				return errors.New("CIP Error: block signer == block coinbase before activation block")
+				log.Error("CIP Error: block signer == block coinbase after activation block")
+				return errors.New("CIP Error: block signer == block coinbase after activation block")
 			}
-			if header.Coinbase == txFeeRecipient {
-				log.Error("CIP Error: block signer == block coinbase before activation block")
-				return errors.New("CIP Error: block signer == block coinbase before activation block")
+			if header.Coinbase != txFeeRecipient {
+				log.Error("CIP Error: block coinbase != tx fee recipient after activation block")
+				return errors.New("CIP Error: block coinbase != tx fee recipient after activation block")
 			}
 			foundOne = true
 			log.Info("Found valid block by author", "block_number", currentNumber)
