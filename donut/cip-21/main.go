@@ -16,7 +16,7 @@ var ctx = context.Background()
 
 var (
 	rpcEndPoint       = flag.String("rpc", "http://localhost:8545/", "RPC Endpoint for the celo node")
-	activationBlock   = flag.Uint64("activationblock", 0, "Activation block number for etherbase split hardfork")
+	activationBlock   = flag.Uint64("activationblock", 0, "Activation block number for Donut hardfork")
 	epochSize         = flag.Uint64("epoch", 0, "Epoch Size")
 	preHardForkValue  = flag.Uint64("value-before", 0, "Lookback Window value before hardfork")
 	postHardForkValue = flag.Uint64("value-after", 0, "Lookback Window value after hardfork")
