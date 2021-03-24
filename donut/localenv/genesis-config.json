@@ -299,7 +299,7 @@
    },
    "gasForNonGoldCurrencies": 50000,
    "blockGasLimit": 13000000,
-   "uptimeLookbackWindow": 3
+   "uptimeLookbackWindow": 10
   },
   "Random": {
    "randomnessBlockRetentionWindow": 720
