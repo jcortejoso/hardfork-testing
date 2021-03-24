@@ -27,7 +27,7 @@ describe("CIP 26 (getValidatorBLS)", function () {
     })
 
     it(`gets the correct BLS key for each validator`, async () => {
-        const n = Math.max(rpcResult.length, 10) // no need to test more than 10
+        const n = Math.min(rpcResult.length, 10) // no need to test more than 10
         for (let index = 0; index < n; index++) {
             console.log("Checking for validator", index)
             let result = await instance.getKey(index, blockNumber)
