@@ -1,19 +1,15 @@
 // tslint:disable:no-console
-import { CeloTx } from "@celo/connect";
-import { ContractKit, newKitFromWeb3 } from "@celo/contractkit";
-import BigNumber from "bignumber.js";
-import { assert } from "chai";
-import ejsUtil from "ethereumjs-util";
-import lodash from "lodash";
+const { newKitFromWeb3 } = require("@celo/contractkit");
+import { ContractKit} from "@celo/contractkit"
+const { assert } = require("chai");
+const ejsUtil = require("ethereumjs-util");
+const lodash = require("lodash");
 import Web3 from "web3";
-import { Promise as bluebird } from "bluebird";
-import {
-  address as nodeAddress,
-  privateKey as nodePrivateKey,
-  url,
-} from "../setup";
+import BigNumber from "bignumber.js"
+const { Promise: bluebirdPromise } = require("bluebird");
 
-import "../setup";
+const {address: nodeAddress, privateKey: nodePrivateKey, url} = (require("../setup") as any)
+
 
 const notCompatibleError =
   "ethCompatible is true, but non-eth-compatible fields are present";
@@ -26,8 +22,6 @@ const gatewayFeeRecipientAddress = "0xc77538d1e30C0e4ec44B0DcaD97FD3dc63fcaCC4";
 // Simple contract with a single constant
 const bytecode =
   "0x608060405260008055348015601357600080fd5b5060358060216000396000f3006080604052600080fd00a165627a7a72305820c7f3f7c299940bb1d9b122d25e8f288817e45bbdeaccdd2f6e8801677ed934e70029";
-
-const verbose = false;
 
 ///////// Configurable values to run only some of the tests during development ////////////////
 // ReplayProtectionTests lets you skip or run only the replay-protection tests during dev
@@ -65,7 +59,7 @@ interface TestCase {
 
 // generateTestCases is used to generate all the cases we want to test for a setup which
 // is either pre-Donut or post-Donut (cipIsActivated true means post-Donut)
-function generateTestCases(cipIsActivated: boolean) {
+function generateTestCases() {
   const cases: TestCase[] = [];
   const getValues = (fieldFilter: boolean | undefined) => {
     return fieldFilter === undefined ? [false, true] : [fieldFilter];
@@ -116,7 +110,7 @@ function generateTestCases(cipIsActivated: boolean) {
 // TestEnv encapsulates a pre-Donut or post-Donut environment and the tests to run on it
 class TestEnv {
   testCases: TestCase[];
-  chainId: number;
+  chainId: number = 0;
   stableTokenAddr: string = "";
   gasPrice: string = "";
 
@@ -129,8 +123,8 @@ class TestEnv {
   // use with `eth_sendRawTransaction`)
   web3: Web3;
 
-  constructor(cipIsActivated: boolean) {
-    this.testCases = generateTestCases(cipIsActivated);
+  constructor() {
+    this.testCases = generateTestCases();
     this.kit = newKitFromWeb3(new Web3(url));
     this.kitWithLocalWallet = newKitFromWeb3(new Web3(url));
     this.web3 = new Web3(url);
@@ -145,7 +139,7 @@ class TestEnv {
     ).gasPriceMinimum();
     this.gasPrice = gasPriceMinimum.times(5).toString();
 
-    await bluebird.delay(2000);
+    await bluebirdPromise.delay(2000);
 
     // Make sure we can use the validator's address to send transactions
     // For signing on the node, unlock the account (and add it first if it's the light node)
@@ -231,7 +225,7 @@ class TestEnv {
   runTestCase(testCase: TestCase) {
     // Generate a human-readable summary of the test case
     const options: string[] = [];
-    lodash.forEach(testCase, (value, key) => {
+    lodash.forEach(testCase, (value: any, key: any) => {
       if (value === true) {
         options.push(key);
       }
@@ -241,7 +235,7 @@ class TestEnv {
       let error: string | null = null;
 
       before(async () => {
-        const tx: CeloTx = {
+        const tx: any = {
           from: nodeAddress,
           gas: 1000000, // plenty for both types of transaction
           gasPrice: this.gasPrice,
@@ -338,7 +332,7 @@ class TestEnv {
 
 describe("CIP-35 >", function (this: any) {
   this.timeout(0);
-  const testEnv = new TestEnv(true);
+  const testEnv = new TestEnv();
   before(async function (this) {
     this.timeout(0);
     await testEnv.before();

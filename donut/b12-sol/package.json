@@ -15,6 +15,7 @@
   "license": "MIT OR Apache-2.0",
   "dependencies": {
     "@celo/contractkit": "^1.0.2",
+    "@celo/typescript": "0.0.1",
     "@summa-tx/memview.sol": "^1.1.0",
     "big-integer": "^1.6.44",
     "bls12377js": "https://github.com/celo-org/bls12377js#cb38a4cfb643c778619d79b20ca3e5283a2122a6",
