@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.library.json",
   "compilerOptions": {
-    "outDir": "test",
+    "outDir": "lib",
     "sourceMap": false,
     "rootDir": "test",
     "baseUrl": ".",

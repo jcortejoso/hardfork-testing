@@ -5,5 +5,5 @@ bin
 b12-sol/cache
 b12-sol/artifacts
 b12-sol/node_modules
-# Ignored because it's compiled from typescript
-b12-sol/test/cip35.js
+# Out of tsc, if run (doesn't need to be run)
+b12-sol/lib
