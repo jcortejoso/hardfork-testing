@@ -7,7 +7,7 @@ require("../setup")
 
 const url = process.env.RPC_URL || "http://localhost:8545"
 
-describe.only("CIP 26 (getValidatorBLS)", function () {
+describe("CIP 26 (getValidatorBLS)", function () {
     let instance;
     let blockNumber;
     let rpcResult;
