@@ -88,7 +88,8 @@ async function infoToData(instance, info) {
   return header
 }
 
-describe("SnarkEpochDataSlasher", function () {
+// Skipping this.  The snark epoch data will be tested using the plumo prover, while the BLS key precompile has its own tests in this repo.
+describe.skip("SnarkEpochDataSlasher", function () {
   let instance;
   this.timeout(60000);
 
