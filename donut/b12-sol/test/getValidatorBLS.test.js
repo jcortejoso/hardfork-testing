@@ -27,7 +27,8 @@ describe("CIP 26 (getValidatorBLS)", function () {
     })
 
     it(`gets the correct BLS key for each validator`, async () => {
-        for (let index = 0; index < rpcResult.length; index++) {
+        const n = Math.max(rpcResult.length, 10) // no need to test more than 10
+        for (let index = 0; index < n; index++) {
             console.log("Checking for validator", index)
             let result = await instance.getKey(index, blockNumber)
             // The precompile gives the uncompressed key, while the API gives compressed
