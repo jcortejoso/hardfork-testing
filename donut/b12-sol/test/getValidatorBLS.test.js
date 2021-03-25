@@ -5,7 +5,7 @@ const Big = require("big-integer")
 
 require("../setup")
 
-const url = process.env.RPC_URL || "http://localhost:8545"
+const url = process.env.RPC_NODE_URL || "http://localhost:8545"
 
 describe("CIP 26 (getValidatorBLS)", function () {
     let instance;
@@ -17,9 +17,9 @@ describe("CIP 26 (getValidatorBLS)", function () {
 
     before(async () => {
         const contract = await ethers.getContractFactory("CIP26Lib");
+        blockNumber = await ethers.provider.getBlockNumber();
         rpcResult = await web3.getBLS(blockNumber);
         instance = await contract.deploy();
-        blockNumber = await ethers.provider.getBlockNumber();
     });
 
     it('sanity check that there is at least one test to run', () => {
