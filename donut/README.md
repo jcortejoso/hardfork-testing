@@ -71,7 +71,7 @@ cd b12sol
 npm install
 export RPC_NODE_URL=[the url, default which works for mycelo: http://localhost:8545]
 export RPC_NODE_ADDRESS=[the address, default which works for mycelo: 0xd927E9e733a46f46e18528148D8b98E496545f66 ]
-export RPC_NODE_URL=[private key (without 0x prefix), default which works for mycelo: 5b278a5547041600410532c3bb4d4bcb7ed42b030763b55789918d56e7910d1b]
+export RPC_NODE_PRIVATE_KEY=[private key (without 0x prefix), default which works for mycelo: 5b278a5547041600410532c3bb4d4bcb7ed42b030763b55789918d56e7910d1b]
 npm run test
 ```
 
